@@ -1,3 +1,4 @@
+
 #include "stdafx.h"
 #include "conio.h"
 #include <iostream>
@@ -7,19 +8,14 @@ using namespace std;
 int main()
 {
 	int N,s,i;
-	cout<< "introducir N: ";
+	cout<< "introducir hasta que numero sumar (N): ";
 	cin>> N;
 	s=0;
 	for (i=1; i<=N; i++)
 		if (i%2!=0)
-			s=s+1;
+			s=s+i;
 	cout<<"la suma es: " <<s;
 	getch();
 	
-	return 0;
-}
-
-int _tmain(int argc, _TCHAR* argv[])
-{
 	return 0;
 }
