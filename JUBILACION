@@ -1,0 +1,35 @@
+// JUBILACION.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main()
+
+{
+	int edad,genero,n,hijos;
+	cout<< "ingrese la edad: ";
+	cin>> edad;
+	cout<< "genero: 1 masculino y 2= femenino" ;
+	cin>> genero;
+    if (genero==1)
+	{
+	   if(edad >=65)
+			cout<<"puede jubilarse" ;
+	   else
+			cout<<"no tiene la edad suficiente" ;
+	}
+	else
+	{
+	   cout<<"cuantos hijos tiene" ;
+	   cin>>hijos ;
+	   if (edad>=(60-hijos))
+	      cout<<"se puede jubilar" ;
+	   else
+		  cout<<"no tiene edad para jubilacion";
+	}
+	getch();
+
+}
